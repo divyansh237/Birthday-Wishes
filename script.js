@@ -63,6 +63,29 @@ document.addEventListener("mousemove", function (e) {
   }
 });
 
+// Touch support for mobile
+document.addEventListener("touchstart", function (e) {
+  isDragging = true;
+  lastX = e.touches[0].clientX;
+  lastY = e.touches[0].clientY;
+});
+
+document.addEventListener("touchend", function () {
+  isDragging = false;
+});
+
+document.addEventListener("touchmove", function (e) {
+  if (isDragging) {
+    const dx = e.touches[0].clientX - lastX;
+    const dy = e.touches[0].clientY - lastY;
+    yAngle += dx * 0.5;
+    xAngle -= dy * 0.5;
+    updateCubeRotation();
+    lastX = e.touches[0].clientX;
+    lastY = e.touches[0].clientY;
+  }
+});
+
 // Arrow keys
 document.addEventListener("keydown", function (e) {
   switch (e.key) {
