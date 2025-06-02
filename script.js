@@ -6,7 +6,7 @@ const revealSection = document.getElementById('revealSection');
 const cardSection = document.getElementById('cardSection');
 
 // Set your birthday target date here
-const targetDate = new Date("2025-06-04, 24:00:00").getTime();
+const targetDate = new Date("2025-06-04, 09:38:00").getTime();
 
 const updateCountdown = setInterval(() => {
   const now = new Date().getTime();
