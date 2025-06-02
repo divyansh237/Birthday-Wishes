@@ -6,7 +6,7 @@ const revealSection = document.getElementById('revealSection');
 const cardSection = document.getElementById('cardSection');
 
 // Set your birthday target date here
-const targetDate = new Date("2025-06-02, 09:44:00").getTime();
+const targetDate = new Date("2025-06-02, 11:50:00").getTime();
 
 const updateCountdown = setInterval(() => {
   const now = new Date().getTime();
@@ -31,6 +31,7 @@ const updateCountdown = setInterval(() => {
 
 function showCube() {
   document.getElementById('scene').style.display = 'block';
+  document.getElementById('bgMusic').play();
   revealSection.classList.add("hidden");
   cardSection.classList.remove("hidden");
 }
