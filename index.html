@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Cube Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <audio id="bgMusic" loop>
+  <source src="audios/Super Khiladi 4 - BGM.mp3" type="audio/mpeg">
+</audio>
+
+  <h1>🎉 Happy Birthday, <span id="name">My Love 💖</span></h1>
+
+  <div class="container" id="countdownSection">
+    <h1>Your Special Day is Almost Here💕</h1>
+    <div class="timer">
+      <div><span id="days">0</span><small>Days</small></div>
+      <div><span id="hours">0</span><small>Hours</small></div>
+      <div><span id="minutes">0</span><small>Minutes</small></div>
+      <div><span id="seconds">0</span><small>Seconds</small></div>
+    </div>
+    <p class="note">Just a little more... A small gift for my favorite person❤</p>
+  </div>
+
+  <div class="container hidden" id="revealSection">
+    <h1>It's Time!</h1>
+    <p class="note">Just a little more... A small gift for my favorite person❤</p>
+    <button class="button" onclick="showCube()">Tap to Reveal 🎁</button>
+  </div>
+
+  <div class="container hidden" id="cardSection">
+    <h1>🎉 Happy Birthday!</h1>
+    <p class="subtext">To My Cutiepie ❤</p>
+    <div class="scene" id="scene" style="display: none;">
+    <div class="cube" id="cube">
+      <div class="face front"><img src="images/img 5.jpg" /></div>
+      <div class="face back"><img src="images/img 7.jpg" /></div>
+      <div class="face right"><img src="images/img 3.jpg" /></div>
+      <div class="face left"><img src="images/img 4.jpg" /></div>
+      <div class="face top"><img src="images/img 2.jpg" /></div>
+      <div class="face bottom"><img src="images/img 6.jpg" /></div>
+    </div>
+  </div>
+    <p class="wish">
+      May every wish you make today come true. You deserve the world, and I’ll always be here to remind you of that.
+      <br><br>
+      Let’s always stay like this... together, forever 💌
+    </p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
