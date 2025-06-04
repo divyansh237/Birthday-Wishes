@@ -6,7 +6,7 @@ const revealSection = document.getElementById('revealSection');
 const cardSection = document.getElementById('cardSection');
 
 // Set your birthday target date here
-const targetDate = new Date("2025-06-02, 13:50:00").getTime();
+const targetDate = new Date("2025-06-04, 24:00:00").getTime();
 
 const updateCountdown = setInterval(() => {
   const now = new Date().getTime();
@@ -21,7 +21,7 @@ const updateCountdown = setInterval(() => {
   document.getElementById("hours").innerText = hours;
   document.getElementById("minutes").innerText = minutes;
   document.getElementById("seconds").innerText = seconds;
-
+  document.getElementById('bgMusic').play();
   if (diff < 0) {
     clearInterval(updateCountdown);
     countdownSection.classList.add("hidden");
