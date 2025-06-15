@@ -95,6 +95,23 @@ h1 {
   border-radius: 10px;
 }
 
+.btn {
+  margin-top: 5px;
+  padding: 10px 25px;
+  background: gold;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  color: #333;
+  box-shadow: 0 0 10px yellow;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
 .wish {
   margin-top: 90px;
   font-size: 1em;
